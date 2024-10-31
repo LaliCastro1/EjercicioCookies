@@ -1,0 +1,9 @@
+body.modo-claro {
+    background-color: white;
+    color: black;
+}
+
+body.modo-oscuro {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <link rel="stylesheet" href="./Cookies.css">
+</head>
+<body class="modo-claro">
+    <h1 id="saludo"></h1>
+    <label>Nombre: <input type="text" id="nombreUsuario"></label>
+    <button onclick="guardarNombre()">Guardar Nombre</button>
+    <br><br>
+
+    <label>Tema: 
+        <select id="tema" onchange="guardarCookieTema()">
+            <option value="modo-claro">Claro</option>
+            <option value="modo-oscuro">Oscuro</option>
+        </select>
+    </label>
+    
+    <br><br>
+
+    <label>Idioma:
+        <select id="idioma" onchange="guardarCookieIdioma()">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+    </label>
+    <br><br>
+
+    <button onclick="restablecerPreferencias()">Restablecer Preferencias</button>
+
+    <script src="./Cookies.js"></script>
+</body>
+</html>
